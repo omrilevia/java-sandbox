@@ -9,4 +9,9 @@ public class NewDataService extends DataService {
         System.out.println("New data service getting data...");
         return new NewData();
     }
+
+    @Override
+    public DataService clone() {
+        return new NewDataService();
+    }
 }

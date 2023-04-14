@@ -8,4 +8,9 @@ public class OldDataService extends DataService {
         System.out.println("Old data service retrieving data...");
         return new OldData();
     }
+
+    @Override
+    public DataService clone() {
+        return new OldDataService();
+    }
 }

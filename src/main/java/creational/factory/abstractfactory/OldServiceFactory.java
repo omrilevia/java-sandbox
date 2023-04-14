@@ -7,12 +7,12 @@ import creational.factory.abstractfactory.data.OldDataService;
 
 public class OldServiceFactory extends AbstractServiceFactory {
     @Override
-    DataService createDataService() {
+    protected DataService createDataService() {
         return new OldDataService();
     }
 
     @Override
-    AuthService createAuthService() {
+    protected AuthService createAuthService() {
         return new OldAuthService();
     }
 }
