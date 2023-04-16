@@ -1,5 +1,6 @@
 package demo;
 
+import patterns.creational.builder.BuilderTest;
 import patterns.creational.factory.abstractfactory.AbstractFactoryTest;
 import patterns.creational.factory.abstractfactory.NewServiceFactory;
 import patterns.creational.factory.abstractfactory.OldServiceFactory;
@@ -7,8 +8,8 @@ import patterns.creational.factory.abstractfactory.OldServiceFactory;
 public class Main {
     public static void main(String[] args) {
         // Builder
-        /*BuilderTest bt = new BuilderTest();
-        bt.testBuilders();*/
+        BuilderTest bt = new BuilderTest();
+        bt.testBuilders();
 
         // Singleton
         /*SingletonTest st = new SingletonTest();

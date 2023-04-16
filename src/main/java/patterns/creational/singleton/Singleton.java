@@ -11,6 +11,10 @@ public class Singleton {
         singletonRegistry.put(name, instance);
     }
 
+    static {
+
+    }
+
     public static Singleton instance() {
         synchronized (Singleton.class) {
             if (instance == null) {
